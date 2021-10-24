@@ -19,7 +19,7 @@ int main(int argc, char* argv[]) {
     }
     //on donne l'arriere plan  le couleur blanc
     if (SDL_SetRenderDrawColor(renderer, 250, 250, 250, SDL_ALPHA_OPAQUE) != 0) {
-        fprintf(stderr, "background color: %s\n", SDL_GetError());
+        fprintf(stderr, "Erreur au niveau background color: %s\n", SDL_GetError());
         exit(1);
     }
     SDL_RenderClear(renderer);
