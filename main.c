@@ -19,7 +19,7 @@ int main(int argc, char* argv[]) {
     }
     //on donne l'arriere plan  le couleur blanc
     if (SDL_SetRenderDrawColor(renderer, 250, 250, 250, SDL_ALPHA_OPAQUE) != 0) {
-        fprintf(stderr, "Erreur of  background color: %s\n", SDL_GetError());
+        fprintf(stderr, "background color: %s\n", SDL_GetError());
         exit(1);
     }
     SDL_RenderClear(renderer);
@@ -47,7 +47,7 @@ int main(int argc, char* argv[]) {
 
     }
    
-    //fermer la SDL et détruire le renderer et la fenetre
+    //fermer la SDL et dï¿½truire le renderer et la fenetre
     
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
